@@ -8,8 +8,8 @@ const launchRouter = require("./routers/launch");
 const PORT = 8080;
 
 const app = express();
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({ ok: true });
